@@ -9,6 +9,7 @@ export interface Project {
   details: string
   achievements?: string[]
 }
+const baseUrl = import.meta.env.BASE_URL
 
 
 export const projects: Project[] = [
@@ -17,7 +18,7 @@ export const projects: Project[] = [
     id: "kaaraange",
     title: "Kaaraange Kids",
     category: "IoT & Sécurité des enfants",
-    image: "/images/logo-light.webp",
+    image: `${baseUrl}images/logo-light.webp`,
     description:
       "Plateforme de suivi et de sécurité des enfants avec géolocalisation temps réel et intégration IoT.",
       
@@ -46,7 +47,7 @@ export const projects: Project[] = [
 
     title:"WER",
     category: "Santé & Bien-être",
-    image:"/images/wer_logo.png",
+    image:`${baseUrl}images/wer_logo.png`,
 
     description:
       "Plateforme de soins différés permettant la gestion des demandes médicales, remboursements et suivis.",
@@ -75,7 +76,7 @@ export const projects: Project[] = [
 
     title:"KANIMMO",
     category: "Immobilier & Gestion",
-    image:"/images/logo_mixte.png",
+    image:`${baseUrl}images/logo_mixte.png`,
 
     description:
       "Application de gestion immobilière pour le suivi des biens, paiements et comptabilité.",
@@ -100,7 +101,8 @@ export const projects: Project[] = [
     category: "Agriculture & Marché",
 
 
-    image:"/images/hero-bg.jpg",
+    image:`${baseUrl}images/hero-bg.jpg`,
+    
 
     description:
       "Plateforme agricole proposant des alertes météo, informations marché et contenus pédagogiques.",
@@ -122,7 +124,7 @@ export const projects: Project[] = [
     id: "sahel-assistance",
     title: "Sahel Assistance",
     category: "Santé",
-    image: "/images/logo_sahel.c518e8de.png",
+    image: `${baseUrl}images/logo_sahel.c518e8de.png`,
     description:
       "Plateforme de santé permettant aux patients de consulter des professionnels de santé à distance ou en cabinet, avec ou sans rendez-vous.",
     technologies: [
@@ -144,7 +146,7 @@ export const projects: Project[] = [
     title:"BASE-SN",
     category: "Suivi & Évaluation de projets",
 
-    image:"/images/logo-BASE.jpg",
+    image:`${baseUrl}images/logo-BASE.jpg`,
 
     description:
       "Plateforme de suivi et évaluation de projets avec tableaux de bord et rapports automatisés.",
