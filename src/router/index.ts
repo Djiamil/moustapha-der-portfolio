@@ -7,7 +7,8 @@ import Experience from '../components/Experience.vue'
 import ProjectDetails from '../views/ProjectDetails.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
+
   routes: [
     {
       path: '/',
@@ -34,14 +35,11 @@ const router = createRouter({
       name: 'experience',
       component: Experience
     },
-
     {
-      path: "/projects/:id",
-      name: "project-details",
+      path: '/projects/:id',
+      name: 'project-details',
       component: ProjectDetails,
     },
-
-
   ]
 })
 
